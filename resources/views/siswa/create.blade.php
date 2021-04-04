@@ -69,6 +69,14 @@
                                 {{$errors->first('alamat')}}
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="detail_pembayaran">pembayaran</label>
+                            <input type="text" name="detail_pembayaran" class="form-control {{$errors->first('detail_pembayaran') ? "is-invalid" : ""}} "  value="{{ old('detail_pembayaran')}}" autocomplete="off">
+                            <div class="invalid-feedback">
+                                {{$errors->first('detail_pembayaran')}}
+                            </div>
+                            <p class="text-muted">Contoh : <b>24/4/2021</b></p>
+                        </div>
                         <button type="submit" class="btn btn-primary">Tambah</button>
                         <a href="{{ route('siswa.index') }}" class="btn btn-danger">Cancel</a>
                     </form>

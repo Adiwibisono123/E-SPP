@@ -57,8 +57,8 @@
                                     <form action="{{ url('petugas',$petugas->id) }}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <a href="{{ url('petugas/'.$petugas->id.'/edit') }}" class="btn btn-primary btn-sm">Edit</a>
-                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('yakin ingin menghapus?')">Hapus</button>
+                                        <a href="{{ url('petugas/'.$petugas->id.'/edit') }}" class="btn btn-primary btn-sm"><i class="fas fa-pen"></i> Edit</a>
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('yakin ingin menghapus?')"><i class="fas fa-trash"></i> Hapus</button>
                                     </form>
                                 </td>
                             </tr>

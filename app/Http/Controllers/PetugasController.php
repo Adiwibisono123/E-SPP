@@ -66,7 +66,7 @@ class PetugasController extends Controller
         $petugas->alamat = $request->alamat;
         $petugas->save();
 
-        return redirect('petugas')->with('status', 'Data Petugas Berhasil Di Tammbahkan!');
+        return redirect('petugas')->with('status', 'Data Petugas Berhasil Di Tambahkan!');
     }
 
     /**

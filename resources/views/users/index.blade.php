@@ -34,7 +34,7 @@
                 <div class="col-md-12 text-right">
                     <a 
                     href="{{route('users.create')}}" 
-                    class="btn btn-primary">Create user</a>
+                    class="btn btn-primary"><i class="fas fa-plus"></i> Tambah user</a>
                 </div>
             </div>
             <br>

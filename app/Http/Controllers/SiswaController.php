@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use UxWeb\SweetAlert\SweetAlert;
 use App\Siswa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class SiswaController extends Controller
 {
@@ -13,6 +14,19 @@ class SiswaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    public function __construct(){
+        $this->middleware(function($request, $next){
+
+            if(Gate::allows('petugas')) return $next($request);
+          
+            abort(403, 'Anda tidak memiliki cukup hak akses');
+        });
+    }
+
+
+
     public function index(Request $request)
     {
        
@@ -67,6 +81,7 @@ class SiswaController extends Controller
         $siswa->email = $request->email;
         $siswa->kelas = $request->kelas;
         $siswa->alamat = $request->alamat;
+        $siswa->detail_pembayaran = $request->detail_pembayaran;
         $siswa->save();
 
         return redirect('siswa')->with('status', 'Data berhasil ditambahkan!');
@@ -80,8 +95,8 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        $siswa = Siswa::find($id);
-        return view('petugas.show');
+        $siswa = Siswa::findOrFail($id);
+        return view('siswa.show', ['siswa' => $siswa]);
     }
 
     /**
@@ -110,6 +125,7 @@ class SiswaController extends Controller
         $siswa->nama = $request->nama;
         $siswa->kelas = $request->kelas;
         $siswa->alamat = $request->alamat;
+        $siswa->detail_pembayaran = $request->detail_pembayaran;
         $siswa->save();
 
         return redirect('siswa')->with('status', 'Data berhasil diUpdate!');

@@ -58,13 +58,13 @@
             </form>
             </div>
         </div>  
-          <div class="text-right mt-3"> 
+          {{-- <div class="text-right mt-3"> 
             <a href="{{ route('siswa.create') }}" class="btn btn-primary mb-4"><b>+ Tambah</b></a>
-          </div>
+          </div> --}}
             <div class="card">
                 <div class="card-header">Daftar Siswa </div>
                 <div class="card-body">
-                    <table class="table table-sm">
+                    <table class="table">
                         <thead class="text-center">
                             <tr>
                                 <th>No</th>
@@ -72,7 +72,7 @@
                                 <th>Nama</th>
                                 <th>Email</th>
                                 <th>Kelas</th>
-                                {{-- <th>Alamat</th> --}}
+                                <th>Alamat</th>
                                 {{-- <th>Status Pembayaran</th> --}}
                                 <th>Action</th>
                             </tr>
@@ -85,15 +85,15 @@
                                 <td>{{ $siswa->nama }}</td>
                                 <td>{{ $siswa->email }}</td>
                                 <td>{{ $siswa->kelas }}</td>
-                                {{-- <td>{{ $siswa->alamat }}</td> --}}
+                                <td>{{ $siswa->alamat }}</td>
                                 {{-- <td></td> --}}
                                 <td>
                                     <form action="{{ url('siswa',$siswa->id) }}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <a href="{{route('siswa.show', [$siswa->id])}}" class="btn btn-info btn-sm">Detail</a>
-                                        <a href="{{ url('siswa/'.$siswa->id.'/edit') }}" class="btn btn-primary btn-sm">Edit</a>
-                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('yakin ingin menghapus?')">Hapus</button>
+                                        <a href="{{route('siswamuhi.show', [$siswa->id])}}" class="btn btn-info btn-sm">Detail</a>
+                                        {{-- <a href="{{ url('siswa/'.$siswa->id.'/edit') }}" class="btn btn-primary btn-sm">Edit</a>
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('yakin ingin menghapus?')">Hapus</button> --}}
                                     </form>
                                 </td>
                             </tr>

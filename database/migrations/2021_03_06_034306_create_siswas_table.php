@@ -20,6 +20,7 @@ class CreateSiswasTable extends Migration
             $table->string('email')->nullable();
             $table->string('kelas')->nullable();
             $table->string('alamat')->nullable();
+            $table->string('detail_pembayaran')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

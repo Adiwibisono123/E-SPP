@@ -65,7 +65,7 @@
     <label for="phone">Phone number</label> 
     <br>
     <input 
-        type="text" 
+        type="number" 
         name="phone" 
         class="form-control">
 

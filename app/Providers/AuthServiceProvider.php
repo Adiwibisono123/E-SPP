@@ -38,6 +38,10 @@ class AuthServiceProvider extends ServiceProvider
         });
       
         Gate::define('spp', function($user){
+            return count(array_intersect(["ADMIN",], json_decode($user->roles)));
+        });
+
+        Gate::define('sppmuhi', function($user){
             return count(array_intersect(["ADMIN", "STAFF", "COSTUMER"], json_decode($user->roles)));
         });
     }

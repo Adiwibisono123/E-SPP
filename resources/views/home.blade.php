@@ -21,6 +21,49 @@
                 </div>
             </div>
         </div>
-    </div>
+        
+        <div class="container mt-4">
+            <div class="row">
+              {{-- <div class="col-sm">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><strong>Kelas X</strong></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Spp</h5>
+                        <p class="card-text">
+                            Rp. 225.000
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><strong>Kelas XI</strong></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Spp</h5>
+                        <p class="card-text">
+                            Rp. 220.000
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><strong>Kelas XII</strong></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Spp</h5>
+                        <p class="card-text">
+                            Rp. 190.000
+                        </p>
+                    </div>
+                </div>
+              </div> --}}
+            </div>
+          </div>
+        </div>
 </div>
+
+
+
+
+
 @endsection

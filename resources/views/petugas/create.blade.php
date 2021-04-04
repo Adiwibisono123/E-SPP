@@ -38,7 +38,8 @@
                                 {{$errors->first('alamat')}}
                             </div>
                         </div>
-                        <div class="form-group">
+                        
+                        {{-- <div class="form-group">
                             <label for="">Roles</label>
                             <br>
                             <input 
@@ -64,7 +65,7 @@
                             <br>
                             <p class="text-muted">*Pilih salah satu</p>
                       
-                        </div>
+                        </div> --}}
                         <button type="submit" class="btn btn-primary">Tambah</button>
                         <a href="{{ route('petugas.index') }}" class="btn btn-danger">Cancel</a>
                     </form>

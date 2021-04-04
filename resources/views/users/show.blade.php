@@ -16,11 +16,11 @@
                             {{$user->name}}
                             <br><br>
                     
-                            @if($user->avatar)
+                            {{-- @if($user->avatar)
                               <img src="{{asset('storage/'. $user->avatar)}}" width="128px"/>
                             @else 
                               No avatar
-                            @endif 
+                            @endif  --}}
                     
                             <br>
                             <br>

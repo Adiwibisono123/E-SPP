@@ -34,10 +34,10 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2021 <div class="bullet"></div> Product By <a href="https://www.instagram.com/pak_kaji_adi/">H. Adi Wibisono</a>
+          Copyright &copy; 2021 <div class="bullet"></div> Product By <a href="https://www.instagram.com/adi_wibi_s.kom/">H. Adi Wibisono</a>
         </div>
         <div class="footer-right">
-          2.3.0
+          1.0.0
         </div>
       </footer>
     </div>

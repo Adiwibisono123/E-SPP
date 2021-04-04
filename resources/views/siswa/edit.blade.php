@@ -27,6 +27,12 @@
                             <label for="alamat">Alamat</label>
                             <input type="text" name="alamat" value="{{ $siswa->alamat }}" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label for="detail_pembayaran">detail_pembayaran</label>
+                            <input type="text" name="detail_pembayaran" value="{{ $siswa->detail_pembayaran }}" class="form-control">
+                            <p class="text-muted">Contoh : <b>24/4/2021</b></p>
+                            <p class="text-muted">catatan : <b>*Jika ada tambahan pembayaran tinggal ditambahkan, jangan menghapus yang kemarin!</b></p>
+                        </div>
                         <button type="submit" class="btn btn-primary">Update</button>
                         <a href="{{ route('siswa.index') }}" class="btn btn-danger">Cancel</a>
                     </form>

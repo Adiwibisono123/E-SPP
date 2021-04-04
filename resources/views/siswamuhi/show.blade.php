@@ -11,7 +11,7 @@
                     <div class="col-md-12">
                         <div class="card">
                           <div class="card-body text-center">
-                              <h3 class="text-center">Detail User Hanya bisa di lihat oleh admin</h3><br>
+                              <h3 class="text-center">Detail Data Siswa</h3><br>
                             <b>Nomor Induk Siswa:</b> <br/>
                             {{$siswa->NIS}}
                             <br><br>
@@ -43,7 +43,7 @@
 
 
                             <br><br>
-                            <b>Detail Pembayaran</b> <br>
+                            <b>Histori Pembayaran</b> <br>
                             {{$siswa->detail_pembayaran}}
 
 
@@ -53,7 +53,7 @@
                                 @foreach (json_decode($siswa->roles) as $role)
                                     &middot; {{$role}} <br>
                                 @endforeach --}}
-                                <a href="{{ route('siswa.index') }}" class="btn btn-primary mt-3">Kembali</a>
+                                <a href="{{ route('siswamuhi.index') }}" class="btn btn-primary mt-3">Kembali</a>
 
                           </div>
                         </div>

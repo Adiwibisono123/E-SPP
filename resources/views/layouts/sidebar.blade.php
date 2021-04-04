@@ -15,27 +15,38 @@
             <a href="/home" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
           </li>
           <li class="menu-header">Starter</li>
-          <li class="nav-item">
-            <a href="/users" class="nav-link"><i class="fas fa-users-cog"></i><span>Users</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="/petugas" class="nav-link"><i class="fas fa-user-tie"></i><span>Petugas</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="/siswa" class="nav-link"><i class="fas fa-user-graduate"></i><span>Siswa</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="/spp" class="nav-link"><i class="fas fa-hand-holding-usd"></i><span>Jumlah Pembayaran</span></a>
-          </li>
-          {{-- <li class="menu-header">Starter</li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
-            <ul class="dropdown-menu">
-              <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
-              <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
-              <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
-            </ul>
+          
+          {{-- <li class="nav-item">
+            <a href="" class="nav-link"><i class="fas fa-user-tie"></i><span>Petugas</span></a>
           </li> --}}
+          <li class="nav-item">
+            <a href="/siswamuhi" class="nav-link"><i class="fas fa-user-graduate"></i><span>Data Siswa</span></a>
+          </li>
+          {{-- <li class="nav-item">
+            <a href="" class="nav-link"><i class="fas fa-cogs"></i></a>
+          </li> --}}
+
+          <li class="nav-item">
+            <a href="/sppmuhi" class="nav-link"><i class="fas fa-hand-holding-usd"></i><span>Jumlah Pembayaran</span></a>
+          </li>
+          <li class="menu-header">Starter</li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-cogs"></i> <span>Pusat Pengaturan</span></a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a href="/users" class="nav-link"><i class="fas fa-users-cog"></i><span>Users</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="/petugas" class="nav-link"><i class="fas fa-user-tie"></i><span>Petugas</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="/siswa" class="nav-link"><i class="fas fa-user-graduate"></i><span>Pengaturan Siswa</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="/spp" class="nav-link"><i class="fas fa-dollar-sign"></i><span>Pengaturan Spp</span></a>
+              </li>
+            </ul>
+          </li>
           {{-- <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Bootstrap</span></a>

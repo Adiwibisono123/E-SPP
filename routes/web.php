@@ -26,11 +26,17 @@ Route::group(['middleware'=>'auth:web'], function() {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('users', 'UserController');
     Route::resource('/siswa', 'SiswaController');
+    Route::resource('/siswamuhi', 'SiswamuhiController');
+    Route::resource('/murid', 'MuridController');
     // Route::get('/siswa/{id}/show', 'SiswaController');
     Route::resource('/petugas', 'PetugasController');
     Route::resource('/spp', 'SppController');
-    Route::get('/spp/export_excel', 'SppController@export_excel');
+    Route::get('/sppmuhi', 'SppmuhiController@index');
+    // Route::get('/spp/export_excel', 'SppController@export_excel');
     // Route::resource('/master', 'SppController');
     // Route::resource('/kelas', 'KelasController');
+
+    // Route::get('search', 'SearchController@index')->name('search');
+    // Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');
 });
 

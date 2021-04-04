@@ -9,7 +9,7 @@ use App\Spp;
 use App\Exports\SppExport;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Gate;
 
 class SppController extends Controller
 {
@@ -19,11 +19,23 @@ class SppController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+   
+
+     
     public function export_excel()
 	{
 		return Excel::download(new SppExport, 'spps.xlsx');
 	}
 
+
+    public function __construct(){
+        $this->middleware(function($request, $next){
+
+            if(Gate::allows('spp')) return $next($request);
+          
+            abort(403, 'Anda tidak memiliki cukup hak akses');
+        });
+    }
 
     public function index()
     {
@@ -31,6 +43,11 @@ class SppController extends Controller
         $data['row'] = 1;
         return view('spp.index')->with($data);
     }
+
+    // public function sppmuhi()
+    // {
+    //     return view('sppmuhi.index');
+    // }
 
    
     /**
